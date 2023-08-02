@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2023-08-02T14:51:05.411Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36" etag="fFYJYsfREs0CoTi5E85P" version="21.6.5" type="github">
+<mxfile host="app.diagrams.net" modified="2023-08-02T15:16:27.630Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36" etag="kZKU1r1xkGDbGFggZtvm" version="21.6.5" type="github">
   <diagram name="Page-1" id="zSFLg_cwVJ2aGZID6Dxe">
-    <mxGraphModel dx="1600" dy="811" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="1173" dy="595" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -211,6 +211,108 @@
         </mxCell>
         <mxCell id="16w4_a7QQfxnr8rlF-E2-66" value="Se considera que el usuario ya esta registrado*" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="1080" y="620" width="145" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="16w4_a7QQfxnr8rlF-E2-134" value="" style="group;movable=0;resizable=0;rotatable=0;deletable=0;editable=0;locked=1;connectable=0;" vertex="1" connectable="0" parent="1">
+          <mxGeometry x="260" y="850" width="580" height="550" as="geometry" />
+        </mxCell>
+        <mxCell id="16w4_a7QQfxnr8rlF-E2-91" value="" style="group" vertex="1" connectable="0" parent="16w4_a7QQfxnr8rlF-E2-134">
+          <mxGeometry width="120" height="550" as="geometry" />
+        </mxCell>
+        <mxCell id="16w4_a7QQfxnr8rlF-E2-88" value="Usuario" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="16w4_a7QQfxnr8rlF-E2-91">
+          <mxGeometry width="120" height="73.33333333333333" as="geometry" />
+        </mxCell>
+        <mxCell id="16w4_a7QQfxnr8rlF-E2-90" value="" style="endArrow=none;html=1;rounded=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="16w4_a7QQfxnr8rlF-E2-91" target="16w4_a7QQfxnr8rlF-E2-88">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="60" y="550" as="sourcePoint" />
+            <mxPoint x="60" y="73.33333333333333" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="16w4_a7QQfxnr8rlF-E2-92" value="" style="group" vertex="1" connectable="0" parent="16w4_a7QQfxnr8rlF-E2-134">
+          <mxGeometry x="230" width="120" height="550" as="geometry" />
+        </mxCell>
+        <mxCell id="16w4_a7QQfxnr8rlF-E2-93" value="Sistema en Línea" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="16w4_a7QQfxnr8rlF-E2-92">
+          <mxGeometry width="120" height="73.33333333333331" as="geometry" />
+        </mxCell>
+        <mxCell id="16w4_a7QQfxnr8rlF-E2-94" value="" style="endArrow=none;html=1;rounded=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="16w4_a7QQfxnr8rlF-E2-92" target="16w4_a7QQfxnr8rlF-E2-93">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="60" y="550" as="sourcePoint" />
+            <mxPoint x="60" y="73.33333333333331" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="16w4_a7QQfxnr8rlF-E2-96" value="" style="group" vertex="1" connectable="0" parent="16w4_a7QQfxnr8rlF-E2-134">
+          <mxGeometry x="460" width="120" height="550" as="geometry" />
+        </mxCell>
+        <mxCell id="16w4_a7QQfxnr8rlF-E2-97" value="Compañía de Tarjeta&amp;nbsp;de Crédito/Débito" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="16w4_a7QQfxnr8rlF-E2-96">
+          <mxGeometry width="120" height="73.33333333333333" as="geometry" />
+        </mxCell>
+        <mxCell id="16w4_a7QQfxnr8rlF-E2-98" value="" style="endArrow=none;html=1;rounded=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="16w4_a7QQfxnr8rlF-E2-96" target="16w4_a7QQfxnr8rlF-E2-97">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="60" y="550" as="sourcePoint" />
+            <mxPoint x="60" y="73.33333333333333" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="16w4_a7QQfxnr8rlF-E2-110" value="" style="endArrow=open;endFill=1;endSize=12;html=1;rounded=0;" edge="1" parent="16w4_a7QQfxnr8rlF-E2-96">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="-170" y="440" as="sourcePoint" />
+            <mxPoint x="60" y="440" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="16w4_a7QQfxnr8rlF-E2-120" value="Procesar Pago" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="16w4_a7QQfxnr8rlF-E2-96">
+          <mxGeometry x="-135" y="360" width="135" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="16w4_a7QQfxnr8rlF-E2-104" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="16w4_a7QQfxnr8rlF-E2-96">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="-170" y="390" as="sourcePoint" />
+            <mxPoint x="60" y="390" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="16w4_a7QQfxnr8rlF-E2-103" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="16w4_a7QQfxnr8rlF-E2-134">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="65" y="320" as="sourcePoint" />
+            <mxPoint x="290" y="320" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="16w4_a7QQfxnr8rlF-E2-99" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="16w4_a7QQfxnr8rlF-E2-134">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="60" y="139.9988888888888" as="sourcePoint" />
+            <mxPoint x="290" y="139.9988888888888" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="16w4_a7QQfxnr8rlF-E2-109" value="" style="endArrow=open;endFill=1;endSize=12;html=1;rounded=0;" edge="1" parent="16w4_a7QQfxnr8rlF-E2-134">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="60" y="268.81999999999994" as="sourcePoint" />
+            <mxPoint x="290" y="268.81999999999994" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="16w4_a7QQfxnr8rlF-E2-111" value="Ingresar al sistema" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="16w4_a7QQfxnr8rlF-E2-134">
+          <mxGeometry x="120" y="110" width="110" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="16w4_a7QQfxnr8rlF-E2-116" value="Mostrar habitaciones disponibles" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="16w4_a7QQfxnr8rlF-E2-134">
+          <mxGeometry x="120" y="238.81999999999994" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="16w4_a7QQfxnr8rlF-E2-117" value="Seleccionar habitación" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="16w4_a7QQfxnr8rlF-E2-134">
+          <mxGeometry x="115" y="290" width="135" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="16w4_a7QQfxnr8rlF-E2-127" value="Respuesta de Pago" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="16w4_a7QQfxnr8rlF-E2-134">
+          <mxGeometry x="320" y="410" width="135" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="16w4_a7QQfxnr8rlF-E2-108" value="Confirmar Reserva" style="endArrow=open;endSize=12;dashed=1;html=1;rounded=0;" edge="1" parent="16w4_a7QQfxnr8rlF-E2-134">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="290" y="490" as="sourcePoint" />
+            <mxPoint x="60" y="490" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="16w4_a7QQfxnr8rlF-E2-135" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="540" y="1220" width="10" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="16w4_a7QQfxnr8rlF-E2-143" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="310" y="970" width="10" height="400" as="geometry" />
+        </mxCell>
+        <mxCell id="16w4_a7QQfxnr8rlF-E2-144" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="780" y="1210" width="10" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="16w4_a7QQfxnr8rlF-E2-145" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="550" y="980" width="10" height="200" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
