@@ -1,9 +1,12 @@
-<mxfile host="app.diagrams.net" modified="2023-08-02T15:16:27.630Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36" etag="kZKU1r1xkGDbGFggZtvm" version="21.6.5" type="github">
+<mxfile host="app.diagrams.net" modified="2023-08-02T15:38:49.930Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36" etag="a2JCeBOFuL0U2m8z4OuM" version="21.6.5" type="github">
   <diagram name="Page-1" id="zSFLg_cwVJ2aGZID6Dxe">
-    <mxGraphModel dx="1173" dy="595" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="1354" dy="1786" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="16w4_a7QQfxnr8rlF-E2-163" value="" style="shape=folder;fontStyle=1;spacingTop=10;tabWidth=40;tabHeight=14;tabPosition=left;html=1;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="970" y="840" width="280" height="520" as="geometry" />
+        </mxCell>
         <mxCell id="16w4_a7QQfxnr8rlF-E2-72" value="" style="group" vertex="1" connectable="0" parent="1">
           <mxGeometry x="1050" y="30" width="800" height="630" as="geometry" />
         </mxCell>
@@ -313,6 +316,93 @@
         </mxCell>
         <mxCell id="16w4_a7QQfxnr8rlF-E2-145" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="550" y="980" width="10" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="16w4_a7QQfxnr8rlF-E2-147" value="DIAGRAMA DE SECUENCIA" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="485" y="790" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="16w4_a7QQfxnr8rlF-E2-148" value="DIAGRAMA DE CASOS DE USO" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="490" y="-20" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="16w4_a7QQfxnr8rlF-E2-149" value="DIAGRAMA DE ACTIVIDADES" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="1410" y="-30" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="16w4_a7QQfxnr8rlF-E2-152" value="Asumiremos que el sistema está diseñado siguiendo una arquitectura que incluye las siguientes capas:&#xa;&#xa; Capa de Presentación: Esta capa es responsable de la interfaz de usuario y la interacción con los usuarios. Aquí se manejan todas las solicitudes y respuestas del usuario.&#xa; Capa de Lógica de Negocios: Esta capa contiene la lógica empresarial y las reglas del sistema. Se encarga de procesar las solicitudes del usuario, realizar validaciones y coordinar las operaciones con la capa de datos.&#xa; Capa de Datos: En esta capa se almacenan y gestionan los datos del sistema, incluidos los detalles de los hoteles, las reservas, los usuarios, etc. Esta capa se comunica con la capa de lógica de negocios para obtener y guardar información." style="text;whiteSpace=wrap;fontStyle=0" vertex="1" parent="1">
+          <mxGeometry x="1285" y="1280" width="560" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="16w4_a7QQfxnr8rlF-E2-161" value="Capa de Presentación " style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="970" y="860" width="80" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="16w4_a7QQfxnr8rlF-E2-174" value="" style="group" vertex="1" connectable="0" parent="1">
+          <mxGeometry x="1560" y="950" width="250" height="290" as="geometry" />
+        </mxCell>
+        <mxCell id="16w4_a7QQfxnr8rlF-E2-160" value="" style="shape=folder;fontStyle=1;spacingTop=10;tabWidth=40;tabHeight=14;tabPosition=left;html=1;whiteSpace=wrap;" vertex="1" parent="16w4_a7QQfxnr8rlF-E2-174">
+          <mxGeometry width="250" height="290" as="geometry" />
+        </mxCell>
+        <mxCell id="16w4_a7QQfxnr8rlF-E2-167" value="Capa de Datos" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="16w4_a7QQfxnr8rlF-E2-174">
+          <mxGeometry y="20" width="95" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="16w4_a7QQfxnr8rlF-E2-171" value="Base de datos" style="verticalAlign=top;align=left;spacingTop=8;spacingLeft=2;spacingRight=12;shape=cube;size=10;direction=south;fontStyle=4;html=1;whiteSpace=wrap;" vertex="1" parent="16w4_a7QQfxnr8rlF-E2-174">
+          <mxGeometry x="40" y="80" width="180" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="16w4_a7QQfxnr8rlF-E2-175" value="" style="group" vertex="1" connectable="0" parent="1">
+          <mxGeometry x="1280" y="950" width="250" height="290" as="geometry" />
+        </mxCell>
+        <mxCell id="16w4_a7QQfxnr8rlF-E2-159" value="" style="shape=folder;fontStyle=1;spacingTop=10;tabWidth=40;tabHeight=14;tabPosition=left;html=1;whiteSpace=wrap;" vertex="1" parent="16w4_a7QQfxnr8rlF-E2-175">
+          <mxGeometry width="250" height="290" as="geometry" />
+        </mxCell>
+        <mxCell id="16w4_a7QQfxnr8rlF-E2-162" value="Capa de Lógica de Negocios " style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="16w4_a7QQfxnr8rlF-E2-175">
+          <mxGeometry y="20" width="95" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="16w4_a7QQfxnr8rlF-E2-170" value="Servidores WEB" style="verticalAlign=top;align=left;spacingTop=8;spacingLeft=2;spacingRight=12;shape=cube;size=10;direction=south;fontStyle=4;html=1;whiteSpace=wrap;" vertex="1" parent="16w4_a7QQfxnr8rlF-E2-175">
+          <mxGeometry x="30" y="85" width="180" height="195" as="geometry" />
+        </mxCell>
+        <mxCell id="16w4_a7QQfxnr8rlF-E2-172" value="Aplicacion.war" style="shape=module;align=left;spacingLeft=20;align=center;verticalAlign=top;whiteSpace=wrap;html=1;" vertex="1" parent="16w4_a7QQfxnr8rlF-E2-175">
+          <mxGeometry x="45" y="120" width="140" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="16w4_a7QQfxnr8rlF-E2-173" value="Utilidades" style="shape=module;align=left;spacingLeft=20;align=center;verticalAlign=top;whiteSpace=wrap;html=1;" vertex="1" parent="16w4_a7QQfxnr8rlF-E2-175">
+          <mxGeometry x="45" y="180" width="140" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="16w4_a7QQfxnr8rlF-E2-187" value="" style="endArrow=none;html=1;rounded=0;entryX=0;entryY=0;entryDx=65;entryDy=180;entryPerimeter=0;" edge="1" parent="16w4_a7QQfxnr8rlF-E2-175" target="16w4_a7QQfxnr8rlF-E2-171">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="210" y="180" as="sourcePoint" />
+            <mxPoint x="260" y="130" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="16w4_a7QQfxnr8rlF-E2-179" value="" style="group" vertex="1" connectable="0" parent="1">
+          <mxGeometry x="1005" y="925" width="185" height="195" as="geometry" />
+        </mxCell>
+        <mxCell id="16w4_a7QQfxnr8rlF-E2-169" value="Cliente" style="verticalAlign=top;align=left;spacingTop=8;spacingLeft=2;spacingRight=12;shape=cube;size=10;direction=south;fontStyle=4;html=1;whiteSpace=wrap;" vertex="1" parent="16w4_a7QQfxnr8rlF-E2-179">
+          <mxGeometry width="185" height="195" as="geometry" />
+        </mxCell>
+        <mxCell id="16w4_a7QQfxnr8rlF-E2-177" value="Interfaz" style="shape=module;align=left;spacingLeft=20;align=center;verticalAlign=top;whiteSpace=wrap;html=1;" vertex="1" parent="16w4_a7QQfxnr8rlF-E2-179">
+          <mxGeometry x="15" y="48" width="130" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="16w4_a7QQfxnr8rlF-E2-178" value="Buscador" style="shape=module;align=left;spacingLeft=20;align=center;verticalAlign=top;whiteSpace=wrap;html=1;" vertex="1" parent="16w4_a7QQfxnr8rlF-E2-179">
+          <mxGeometry x="15" y="115" width="130" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="16w4_a7QQfxnr8rlF-E2-180" value="" style="group" vertex="1" connectable="0" parent="1">
+          <mxGeometry x="1005" y="1140" width="185" height="195" as="geometry" />
+        </mxCell>
+        <mxCell id="16w4_a7QQfxnr8rlF-E2-181" value="Cliente Movil" style="verticalAlign=top;align=left;spacingTop=8;spacingLeft=2;spacingRight=12;shape=cube;size=10;direction=south;fontStyle=4;html=1;whiteSpace=wrap;" vertex="1" parent="16w4_a7QQfxnr8rlF-E2-180">
+          <mxGeometry width="185" height="195" as="geometry" />
+        </mxCell>
+        <mxCell id="16w4_a7QQfxnr8rlF-E2-182" value="Interfaz Movil" style="shape=module;align=left;spacingLeft=20;align=center;verticalAlign=top;whiteSpace=wrap;html=1;" vertex="1" parent="16w4_a7QQfxnr8rlF-E2-180">
+          <mxGeometry x="15" y="48" width="130" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="16w4_a7QQfxnr8rlF-E2-189" value="" style="endArrow=none;html=1;rounded=0;exitX=0;exitY=0;exitDx=92.5;exitDy=0;exitPerimeter=0;entryX=0.26;entryY=1.007;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="16w4_a7QQfxnr8rlF-E2-169" target="16w4_a7QQfxnr8rlF-E2-170">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1230" y="1010" as="sourcePoint" />
+            <mxPoint x="1280" y="960" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="16w4_a7QQfxnr8rlF-E2-190" value="" style="endArrow=none;html=1;rounded=0;exitX=0;exitY=0;exitDx=92.5;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="16w4_a7QQfxnr8rlF-E2-181">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1260" y="1210" as="sourcePoint" />
+            <mxPoint x="1310" y="1160" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="16w4_a7QQfxnr8rlF-E2-191" value="DIAGRAMA DE DESPLIEGUE" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="1380" y="790" width="120" height="30" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
