@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-10-09T13:58:13.676Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.0.0 Safari/537.36" etag="c7ezYPpd1U3QUFX4acwQ" version="22.0.4" type="github">
+<mxfile host="app.diagrams.net" modified="2023-10-09T14:33:07.813Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.0.0 Safari/537.36" etag="GGxkDcprdEUXF8kGuGdi" version="22.0.4" type="github">
   <diagram name="Página-1" id="e4uMJLlvltjFi55yqN0S">
     <mxGraphModel dx="1877" dy="542" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -6,6 +6,9 @@
         <mxCell id="1" parent="0" />
         <mxCell id="XDD5NqhHqpp_Tf_U7cEY-1" value="Proyecto-Angular" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="414" y="240" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="XDD5NqhHqpp_Tf_U7cEY-17" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="XDD5NqhHqpp_Tf_U7cEY-3" target="XDD5NqhHqpp_Tf_U7cEY-1">
+          <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="XDD5NqhHqpp_Tf_U7cEY-3" value="Source Code Files" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="-70" y="40" width="380" height="360" as="geometry" />
@@ -22,11 +25,17 @@
         <mxCell id="XDD5NqhHqpp_Tf_U7cEY-9" value="&lt;b&gt;Services:&lt;br&gt;&lt;/b&gt;Servicio.service.ts" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="XDD5NqhHqpp_Tf_U7cEY-3">
           <mxGeometry x="200" y="200" width="160" height="140" as="geometry" />
         </mxCell>
+        <mxCell id="XDD5NqhHqpp_Tf_U7cEY-18" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="XDD5NqhHqpp_Tf_U7cEY-10" target="XDD5NqhHqpp_Tf_U7cEY-1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
         <mxCell id="XDD5NqhHqpp_Tf_U7cEY-10" value="&lt;blockquote style=&quot;margin: 0 0 0 40px; border: none; padding: 0px;&quot;&gt;Configuration Files&lt;/blockquote&gt;" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="374" y="20" width="200" height="140" as="geometry" />
         </mxCell>
         <mxCell id="XDD5NqhHqpp_Tf_U7cEY-11" value="&lt;b&gt;File&lt;/b&gt;&lt;br&gt;angular.json" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="XDD5NqhHqpp_Tf_U7cEY-10">
           <mxGeometry x="40" y="50" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="XDD5NqhHqpp_Tf_U7cEY-19" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="XDD5NqhHqpp_Tf_U7cEY-12" target="XDD5NqhHqpp_Tf_U7cEY-1">
+          <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="XDD5NqhHqpp_Tf_U7cEY-12" value="&lt;blockquote style=&quot;margin: 0 0 0 40px; border: none; padding: 0px;&quot;&gt;Libraries&lt;/blockquote&gt;" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="650" y="140" width="200" height="260" as="geometry" />
@@ -37,11 +46,17 @@
         <mxCell id="XDD5NqhHqpp_Tf_U7cEY-14" value="&lt;b&gt;Module Navigator&lt;/b&gt;&lt;br&gt;node_modules Flder" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="XDD5NqhHqpp_Tf_U7cEY-12">
           <mxGeometry x="40" y="140" width="120" height="60" as="geometry" />
         </mxCell>
+        <mxCell id="XDD5NqhHqpp_Tf_U7cEY-20" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="XDD5NqhHqpp_Tf_U7cEY-15" target="XDD5NqhHqpp_Tf_U7cEY-1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
         <mxCell id="XDD5NqhHqpp_Tf_U7cEY-15" value="&lt;blockquote style=&quot;margin: 0 0 0 40px; border: none; padding: 0px;&quot;&gt;Baselines&lt;/blockquote&gt;" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="374" y="370" width="200" height="140" as="geometry" />
         </mxCell>
         <mxCell id="XDD5NqhHqpp_Tf_U7cEY-16" value="&lt;b&gt;File&lt;/b&gt;&lt;br&gt;README.md" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="XDD5NqhHqpp_Tf_U7cEY-15">
           <mxGeometry x="40" y="50" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="XDD5NqhHqpp_Tf_U7cEY-21" value="&lt;b&gt;Repository Link:&lt;/b&gt;&lt;br&gt;https://github.com/EZambranoFx/Proyecto-Angular.git" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-50" y="450" width="280" height="60" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
