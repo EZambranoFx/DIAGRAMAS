@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-12-13T15:07:59.137Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36" etag="f-3cCzEbeXHsOD5PuOiP" version="22.1.8" type="github">
+<mxfile host="app.diagrams.net" modified="2023-12-13T15:20:58.885Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36" etag="paaBQuZyBhYrNCJTsKIg" version="22.1.8" type="github">
   <diagram name="Página-1" id="LI9CimUNfzlcESdk0Z_N">
     <mxGraphModel dx="3217" dy="1303" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -86,6 +86,21 @@
         </mxCell>
         <mxCell id="pEdZLLj2RjSo5PNS1kJ_-30" value="&lt;font style=&quot;font-size: 20px;&quot;&gt;Control Flow Graph&lt;br&gt;Enrique Zambrano&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="-800" y="10" width="360" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="pEdZLLj2RjSo5PNS1kJ_-34" value="&lt;font style=&quot;font-size: 28px;&quot;&gt;Starting Node&lt;/font&gt;" style="shape=singleArrow;whiteSpace=wrap;html=1;arrowWidth=0.8153846153846143;arrowSize=0.41060606060605986;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="-230" y="10" width="220" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="pEdZLLj2RjSo5PNS1kJ_-35" value="&lt;font style=&quot;font-size: 28px;&quot;&gt;End Node&lt;/font&gt;" style="shape=singleArrow;direction=west;whiteSpace=wrap;html=1;arrowWidth=0.7583333333333314;arrowSize=0.20625000000000177;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
+          <mxGeometry x="-410" y="1070" width="160" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="pEdZLLj2RjSo5PNS1kJ_-36" value="&lt;font style=&quot;font-size: 28px;&quot;&gt;Loop&lt;/font&gt;" style="shape=singleArrow;whiteSpace=wrap;html=1;arrowWidth=0.8153846153846143;arrowSize=0.41060606060605986;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="-770" y="800" width="160" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="pEdZLLj2RjSo5PNS1kJ_-37" value="&lt;font style=&quot;font-size: 28px;&quot;&gt;Statements&lt;/font&gt;" style="shape=singleArrow;whiteSpace=wrap;html=1;arrowWidth=0.8153846153846143;arrowSize=0.41060606060605986;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="-470" y="350" width="200" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="pEdZLLj2RjSo5PNS1kJ_-38" value="&lt;font style=&quot;font-size: 28px;&quot;&gt;Statement&lt;/font&gt;" style="shape=singleArrow;direction=west;whiteSpace=wrap;html=1;arrowWidth=0.7583333333333314;arrowSize=0.20625000000000177;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="-320" y="830" width="160" height="80" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
