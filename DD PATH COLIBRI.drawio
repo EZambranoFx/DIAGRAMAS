@@ -1,9 +1,81 @@
-<mxfile host="app.diagrams.net" modified="2023-12-19T16:57:35.032Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36" version="22.1.11" etag="GKX--ibAEWNCW-Zju6so" type="github">
+<mxfile host="app.diagrams.net" modified="2023-12-19T17:19:27.804Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36" etag="XsX9DzCXHofwlQJ3ZoA4" version="22.1.11" type="github">
   <diagram name="Página-1" id="jXxhIS175Pqcwx1L7RCy">
-    <mxGraphModel>
+    <mxGraphModel dx="2084" dy="620" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="o_6TI31CdUnoZ2amYji5-1" value="&lt;font style=&quot;font-size: 15px;&quot;&gt;A. Creacion de Ticket&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="320" y="40" width="140" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="o_6TI31CdUnoZ2amYji5-2" value="&lt;pre style=&quot;font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; overflow-wrap: break-word;&quot;&gt;import { Component, OnInit } from &#39;@angular/core&#39;;&lt;br&gt;import { FormBuilder, FormGroup, Validators } from &#39;@angular/forms&#39;;&lt;br&gt;import { MessageService } from &#39;primeng/api&#39;;&lt;br&gt;import { TokenService } from &#39;src/app/shared/services/token.service&#39;;&lt;br&gt;import { MapService } from &#39;../../services/map.service&#39;;&lt;br&gt;import { OrganizationService } from &#39;../../services/organization.service&#39;;&lt;br&gt;import { VerifyStateService } from &#39;../../services/verify-state.service&#39;;&lt;br&gt;import { ImageService } from &#39;src/app/shared/services/image.service&#39;;&lt;br&gt;import { Router } from &#39;@angular/router&#39;;&lt;br&gt;class ImageSnippet {&lt;br&gt;  constructor(public src: string, public file: File) {}&lt;br&gt;}&lt;br&gt;&lt;br&gt;@Component({&lt;br&gt;  selector: &#39;app-crear-ticket&#39;,&lt;br&gt;  templateUrl: &#39;./crear-ticket.component.html&#39;,&lt;br&gt;  styleUrls: [&#39;./crear-ticket.component.scss&#39;],&lt;br&gt;  providers: [MessageService],&lt;br&gt;})&lt;br&gt;&lt;br&gt;export class CrearTicketComponent implements OnInit {&lt;br&gt;  // TODO: upload image to database&lt;br&gt;  selectedFile: ImageSnippet | undefined;&lt;br&gt;  constructor(&lt;br&gt;    private fb: FormBuilder,&lt;br&gt;    private messageService: MessageService,&lt;br&gt;    private mapService: MapService,&lt;br&gt;    private verifyService: VerifyStateService,&lt;br&gt;    private tokenService: TokenService,&lt;br&gt;    private organizationService: OrganizationService,&lt;br&gt;    private imageService: ImageService,&lt;br&gt;    private router: Router&lt;br&gt;  ){}&lt;br&gt;  ngOnInit(): void {&lt;br&gt;    this.verifyService.getPerfilOrganzationId(this.tokenService.getId())&lt;br&gt;      .subscribe(user =&amp;gt;{&lt;br&gt;        this.createTicketForm.get([&#39;priority&#39;])?.setValue(user.usuario.organization.priority);&lt;br&gt;      })&lt;br&gt;  }&lt;br&gt;&lt;br&gt;  private ubicationEntrega: mapboxgl.LngLat| undefined;&lt;br&gt;  private ubicationRecogida: mapboxgl.LngLat| undefined;&lt;br&gt;  private _distance: number = 0;&lt;br&gt;  private _time: number = 0;&lt;br&gt;&lt;br&gt;  get distance() {return this._distance};&lt;br&gt;&lt;br&gt;  get time() {return this._time};&lt;br&gt;&lt;br&gt;&lt;br&gt;  isLocations(){&lt;br&gt;    if(this.ubicationEntrega &amp;amp;&amp;amp; this.ubicationRecogida) return true;&lt;br&gt;    return false;&lt;br&gt;  }&lt;br&gt;&lt;br&gt;  showTimeDistance(){&lt;br&gt;    this.mapService.getTimeDistance(this.ubicationEntrega!,this.ubicationRecogida!)&lt;br&gt;      .subscribe( resp =&amp;gt;{&lt;br&gt;        this._distance = parseFloat((resp.routes[0].distance / 1000).toFixed(2));&lt;br&gt;        this._time = Math.round(resp.routes[0].duration / 60);&lt;br&gt;        this.createTicketForm.get([&#39;tiempo&#39;])?.setValue(this._time);&lt;br&gt;        this.createTicketForm.get([&#39;distancia&#39;])?.setValue(this._distance);&lt;br&gt;      });&lt;br&gt;  }&lt;br&gt;&lt;br&gt;  createTicketForm: FormGroup = this.fb.group({&lt;br&gt;    name_client: [, [Validators.required]],&lt;br&gt;    celular_cliente: [, [Validators.required,Validators.minLength(10),Validators.pattern(&#39;[0-9]*&#39;)]],&lt;br&gt;    descripcion_objeto: [, [Validators.required]],&lt;br&gt;    valor_organizacion: [, [Validators.required]],&lt;br&gt;    referencia_entrega: [, [Validators.required]],&lt;br&gt;    esEntregaPuerta:[false],&lt;br&gt;    fecha: [,[Validators.required]],&lt;br&gt;    location_entrega: this.fb.group({&lt;br&gt;      type: [&#39;Point&#39;],&lt;br&gt;      coordinates: [, [, Validators.required]]&lt;br&gt;    }),&lt;br&gt;    location_recogida: this.fb.group({&lt;br&gt;      type: [&#39;Point&#39;],&lt;br&gt;      coordinates: [, [, Validators.required]]&lt;br&gt;    }),&lt;br&gt;    tiempo: [, [Validators.required]],&lt;br&gt;    direccion_entrega: [, [Validators.required]],&lt;br&gt;    email_cliente: [, [Validators.required, Validators.email]],&lt;br&gt;    distancia: [, [ Validators.required]],&lt;br&gt;    priority:[, [Validators.required]]&lt;br&gt;  });&lt;br&gt;&lt;br&gt;  campoEsValido(campo: string) {&lt;br&gt;    if ((&#39;location_entrega&#39; == campo) || (&#39;location_recogida&#39; == campo) ) {&lt;br&gt;      return (&lt;br&gt;        this.createTicketForm.controls[campo].get([&#39;coordinates&#39;])?.touched &amp;amp;&amp;amp;&lt;br&gt;        this.createTicketForm.controls[campo].get([&#39;coordinates&#39;])?.errors&lt;br&gt;      );&lt;br&gt;    }&lt;br&gt;    return (&lt;br&gt;      this.createTicketForm.controls[campo].errors &amp;amp;&amp;amp;&lt;br&gt;      this.createTicketForm.controls[campo].touched&lt;br&gt;    );&lt;br&gt;  }&lt;br&gt;&lt;br&gt;  addLocationEntrega(location: mapboxgl.LngLat) {&lt;br&gt;    this.ubicationEntrega = location;&lt;br&gt;    this.createTicketForm&lt;br&gt;      .get([&#39;location_entrega&#39;, &#39;coordinates&#39;])&lt;br&gt;      ?.setValue(location.toArray());&lt;br&gt;  }&lt;br&gt;  addLocationRecogida(location: mapboxgl.LngLat) {&lt;br&gt;    this.ubicationRecogida = location;&lt;br&gt;    this.createTicketForm&lt;br&gt;      .get([&#39;location_recogida&#39;, &#39;coordinates&#39;])&lt;br&gt;      ?.setValue(location.toArray());&lt;br&gt;  }&lt;br&gt;&lt;br&gt;  sendCreateTicket(){&lt;br&gt;&lt;br&gt;    console.log(this.createTicketForm.value);&lt;br&gt;&lt;br&gt;&lt;br&gt;    this.organizationService.createTicket(this.createTicketForm.value)&lt;br&gt;    .subscribe((data) =&amp;gt; {&lt;br&gt;      if (data){&lt;br&gt;        this.messageService.add({&lt;br&gt;          severity: &#39;success&#39;,&lt;br&gt;          summary: &#39;SUCCESS&#39;,&lt;br&gt;          detail: &#39;exito&#39;,&lt;br&gt;          closable: true,&lt;br&gt;        }&lt;br&gt;        );&lt;br&gt;        &lt;br&gt;      }else {&lt;br&gt;        this.messageService.add({&lt;br&gt;          severity: &#39;error&#39;,&lt;br&gt;          summary: &#39;ERROR&#39;,&lt;br&gt;          detail: data[&#39;msg&#39;],&lt;br&gt;          closable: true,&lt;br&gt;        });&lt;br&gt;      }&lt;br&gt;    })&lt;br&gt;      setTimeout(() =&amp;gt; {&lt;br&gt;        this.messageService.clear();&lt;br&gt;        this.router.navigate([&#39;/dashboard-organization/mis-tickets&#39;]);&lt;br&gt;      }, 1000);&lt;br&gt;      &lt;br&gt;  }&lt;br&gt;  /*&lt;br&gt;  TODO: Complet the code for to upload image&lt;br&gt;   */&lt;br&gt;&lt;br&gt;}&lt;/pre&gt;" style="text;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-290" y="60" width="560" height="2210" as="geometry" />
+        </mxCell>
+        <mxCell id="o_6TI31CdUnoZ2amYji5-3" value="2. SendCreateTicket()&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;116-120" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="280" y="110" width="190" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="o_6TI31CdUnoZ2amYji5-4" value="1. isLocation()&amp;nbsp; &amp;nbsp; &amp;nbsp; 52-53" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="270" y="90" width="156" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="o_6TI31CdUnoZ2amYji5-5" value="&lt;font style=&quot;font-size: 15px;&quot;&gt;A. Creacion de Ticket&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="540" y="40" width="140" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="o_6TI31CdUnoZ2amYji5-7" value="1. CreateTicket()&amp;nbsp; &amp;nbsp; &amp;nbsp; 16-22" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="520" y="90" width="190" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="o_6TI31CdUnoZ2amYji5-8" value="" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="290" y="180" width="180" height="180" as="geometry" />
+        </mxCell>
+        <mxCell id="o_6TI31CdUnoZ2amYji5-9" value="" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="525" y="180" width="180" height="180" as="geometry" />
+        </mxCell>
+        <mxCell id="o_6TI31CdUnoZ2amYji5-10" value="A" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="290" y="190" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="o_6TI31CdUnoZ2amYji5-11" value="B" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="520" y="190" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="o_6TI31CdUnoZ2amYji5-16" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="o_6TI31CdUnoZ2amYji5-13" target="o_6TI31CdUnoZ2amYji5-14">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="o_6TI31CdUnoZ2amYji5-13" value="1" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="590" y="200" width="50" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="o_6TI31CdUnoZ2amYji5-14" value="SNK" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="590" y="280" width="50" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="o_6TI31CdUnoZ2amYji5-22" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="o_6TI31CdUnoZ2amYji5-17" target="o_6TI31CdUnoZ2amYji5-18">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="o_6TI31CdUnoZ2amYji5-23" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="o_6TI31CdUnoZ2amYji5-17" target="o_6TI31CdUnoZ2amYji5-19">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="o_6TI31CdUnoZ2amYji5-17" value="1" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="355" y="200" width="50" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="o_6TI31CdUnoZ2amYji5-21" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="o_6TI31CdUnoZ2amYji5-18" target="o_6TI31CdUnoZ2amYji5-20">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="o_6TI31CdUnoZ2amYji5-18" value="2" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="400" y="254" width="50" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="o_6TI31CdUnoZ2amYji5-19" value="SNK" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="305" y="254" width="50" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="o_6TI31CdUnoZ2amYji5-20" value="SNK" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="400" y="310" width="50" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="o_6TI31CdUnoZ2amYji5-25" value="" style="endArrow=none;html=1;rounded=0;fillColor=#d5e8d4;strokeColor=#82b366;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="410" y="210" as="sourcePoint" />
+            <mxPoint x="460" y="290" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="o_6TI31CdUnoZ2amYji5-26" value="" style="endArrow=none;html=1;rounded=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;exitX=0;exitY=0;exitDx=0;exitDy=0;fillColor=#d5e8d4;strokeColor=#82b366;" edge="1" parent="1" source="o_6TI31CdUnoZ2amYji5-13">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="420" y="220" as="sourcePoint" />
+            <mxPoint x="460" y="289" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
