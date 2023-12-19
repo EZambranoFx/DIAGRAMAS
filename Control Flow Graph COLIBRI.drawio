@@ -1,9 +1,57 @@
-<mxfile host="app.diagrams.net" modified="2023-12-19T22:02:25.898Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36 Edg/120.0.0.0" version="22.1.11" etag="VriE00TtblsKt0m7ntbf" type="github">
+<mxfile host="app.diagrams.net" modified="2023-12-19T22:10:28.335Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36 Edg/120.0.0.0" etag="ezP1czk-fRebkqw6MIz_" version="22.1.11" type="github">
   <diagram name="Página-1" id="xXWSakr2wuBFF4PkwK2o">
-    <mxGraphModel>
+    <mxGraphModel dx="1026" dy="526" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="hvSkrJf4Qd1bfDmbwsGj-2" value="&lt;b style=&quot;font-size: 15px;&quot;&gt;DD-GRAPH&lt;br&gt;COLIBRI&lt;/b&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="367" y="30" width="94" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="hvSkrJf4Qd1bfDmbwsGj-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="hvSkrJf4Qd1bfDmbwsGj-3" target="hvSkrJf4Qd1bfDmbwsGj-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="hvSkrJf4Qd1bfDmbwsGj-3" value="SRC" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="594" y="80" width="40" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="hvSkrJf4Qd1bfDmbwsGj-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="hvSkrJf4Qd1bfDmbwsGj-4" target="hvSkrJf4Qd1bfDmbwsGj-7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="hvSkrJf4Qd1bfDmbwsGj-4" value="A" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="594" y="150" width="40" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="hvSkrJf4Qd1bfDmbwsGj-16" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="hvSkrJf4Qd1bfDmbwsGj-7" target="hvSkrJf4Qd1bfDmbwsGj-13">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="hvSkrJf4Qd1bfDmbwsGj-17" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="hvSkrJf4Qd1bfDmbwsGj-7" target="hvSkrJf4Qd1bfDmbwsGj-10">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="hvSkrJf4Qd1bfDmbwsGj-7" value="B" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="594" y="210" width="40" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="hvSkrJf4Qd1bfDmbwsGj-18" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="hvSkrJf4Qd1bfDmbwsGj-10" target="hvSkrJf4Qd1bfDmbwsGj-12">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="hvSkrJf4Qd1bfDmbwsGj-10" value="C" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="520" y="270" width="40" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="hvSkrJf4Qd1bfDmbwsGj-11" value="SNK" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="594" y="390" width="40" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="hvSkrJf4Qd1bfDmbwsGj-20" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="hvSkrJf4Qd1bfDmbwsGj-12" target="hvSkrJf4Qd1bfDmbwsGj-11">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="hvSkrJf4Qd1bfDmbwsGj-12" value="E" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="594" y="320" width="40" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="hvSkrJf4Qd1bfDmbwsGj-19" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="hvSkrJf4Qd1bfDmbwsGj-13" target="hvSkrJf4Qd1bfDmbwsGj-12">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="hvSkrJf4Qd1bfDmbwsGj-13" value="D" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="670" y="270" width="40" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="hvSkrJf4Qd1bfDmbwsGj-23" value="A)&#xa;    1. Inicio    - Inicializar variables y servicios&#xa;    2. Crear instancia de CrearTicketComponent&#xa;    3. Llamar a ngOnInit&#xa;    - Llamar a verifyService.getPerfilOrganzationId&#xa;        - Si es exitoso, establecer el valor de &#39;priority&#39; en createTicketForm&#xa;B)&#xa;    4. ¿Se llama a isLocations()?&#xa;    - Si es verdadero, ir al paso 5&#xa;    - Si es falso, ir al paso 6&#xa;C)&#xa;    5. Llamar a showTimeDistance()&#xa;        - Llamar a mapService.getTimeDistance&#xa;            - Si es exitoso, establecer los valores de &#39;_distance&#39;, &#39;_time&#39;, &#39;tiempo&#39; y &#39;distancia&#39; en             createTicketForm&#xa;D)&#xa;    6. ¿Se llama a addLocationEntrega() o addLocationRecogida()?&#xa;        - Si es verdadero, establecer los valores de &#39;location_entrega&#39; o &#39;location_recogida&#39; en         createTicketForm&#xa;E)&#xa;7. ¿Se llama a sendCreateTicket()?&#xa;    - Si es verdadero, imprimir el valor de createTicketForm y llamar a organizationService.createTicket&#xa;" style="text;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="20" y="110" width="560" height="340" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
